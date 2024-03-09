@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fitness tracker</title>
     <link rel="stylesheet" href="../CSS/Style.css">
 </head>
 <body>
     <header>
         <nav>
+        <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Breakfast.html">Breakfast</a></li>
-            <li><a href="Lunch.html">Lunch</a></li>
-            <li><a href="Diner.html">Dinner</a></li>
-            <li><a href="Desert.html">Desert</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Graph.html">Graph</a></li>
+            <li><a href="Calendar.html">Calendar</a></li>
             <li><a href="About.html">About</a></li>
-            <li><button id="Login">Login</button></li>
+        </ul>
         </nav>
+        <div id="login">
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Log In">
+            </form>
+        </div>
     </header>
     <h1>Home</h1>
-
+    <form id="tracker">
+        <label for="Muscles">Muscles</label>
+        <select name="Muscles" id="Muscles">
+            <option value="Back">Back</option>
+            <option value="Chest">Chest</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Arms">Arms</option>
+            <option value="Legs">Legs</option>
+        </select>
+        <br>
+        <label for="Weight">Weight (kg):</label>
+        <input type="number" name="Weight" id="Weight" step="1" required>
+        <br>
+        <label for="Exercise">Exercise:</label>
+        <input type="text" name="Exercise" id="Exercise" required>
+        <br>
+        <label for="Sets">Sets:</label>
+        <input type="number" name="Sets" id="Sets" step="1" required>
+        <br>
+        <label for="Date">Date:</label>
+        <input type="date" name="Date" id="Date" required>
+        <br>
+        <label for="Comment">Comment:</label>
+        <input type="text" name="Comment" id="Comment">
+        <br>
+    </form>
+    
+    <script src="../Javascript/Script.js"></script>
 </body>
 </html>
