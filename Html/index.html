@@ -10,24 +10,23 @@
     <header>
         <nav>
         <ul>
+        <div id="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="History.html">History</a></li>
-            <li><a href="Graph.html">Graph</a></li>
             <li><a href="Calendar.html">Calendar</a></li>
             <li><a href="About.html">About</a></li>
+            <li id="login"><a href="">Login</a></li>
+        </div>
         </ul>
         </nav>
-        <div id="login">
-            <form>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <input type="submit" value="Log In">
-            </form>
-        </div>
     </header>
     <h1>Home</h1>
-    <form id="tracker">
-        <label for="Muscles">Muscles</label>
+    
+    <form>
+        <h2>Form</h2>
+    <div id="tracker">
+        <div id="Muscles" class="inputForm">
+        <label for="Muscles">Muscles:</label>
         <select name="Muscles" id="Muscles">
             <option value="Back">Back</option>
             <option value="Chest">Chest</option>
@@ -35,22 +34,22 @@
             <option value="Arms">Arms</option>
             <option value="Legs">Legs</option>
         </select>
-        <br>
-        <label for="Weight">Weight (kg):</label>
-        <input type="number" name="Weight" id="Weight" step="1" required>
-        <br>
-        <label for="Exercise">Exercise:</label>
-        <input type="text" name="Exercise" id="Exercise" required>
-        <br>
-        <label for="Sets">Sets:</label>
-        <input type="number" name="Sets" id="Sets" step="1" required>
-        <br>
-        <label for="Date">Date:</label>
-        <input type="date" name="Date" id="Date" required>
-        <br>
-        <label for="Comment">Comment:</label>
-        <input type="text" name="Comment" id="Comment">
-        <br>
+        <div class="inputForm">
+        <input type="text" placeholder="Weight (kg)" required>
+        </div>
+        <div class="inputForm">
+            <input type="text" placeholder="Sets" required>
+        </div>
+        <div class="inputForm">
+            <input type="text" placeholder="Exercise" required>
+        </div>
+        <div class="inputForm">
+            <input type="text" placeholder="Aproximate Time" required>
+        </div>
+        <div class="inputForm">
+            <input type="text" placeholder="Comment">
+        </div>
+        
     </form>
     
     <script src="../Javascript/Script.js"></script>

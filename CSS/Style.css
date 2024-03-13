@@ -2,19 +2,26 @@
     margin: 0;
     padding: 0;
     font-family:sans-serif;
+    color: #ee6c4d;
 }
 body{
-    background-color: #f4faff;
+    background-color: #e0fbfc;
 }
 h1{
     text-align: center;
 }
-#login{
-    display: flex;
-    justify-content: center;
+h2{
+    text-align: center;
+    margin: 1em;
 }
-nav ul{
-    background-color: #28a745;
+nav button:hover{
+    color: white;
+}
+nav #login{
+    margin-left: auto;
+}
+nav #navigation{
+    background-color: #293241;
     display: flex;
     justify-content: center;
 }
@@ -24,12 +31,26 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    color: #cbedd3;
+    color: #98c1d9;
 }
 nav a:hover{
     color: white;
     
 }
-#tracker{
+form{
+    display: flex;
+    justify-content: center;
+    background-color: #293241;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 1em;
+}
+input, select{
+    background-color: #e0fbfc;
+    border: none;
+    padding: 0.5em;
     margin: 1em;
 }
+
